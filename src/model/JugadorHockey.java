@@ -15,7 +15,7 @@ public class JugadorHockey extends Persona implements DesplazarseEnPistaConPalo 
     }
 
     public String getNombrePosicion() {
-        return posicion.toString();
+        return posicion.toString(); 
     }
 
 
@@ -25,5 +25,9 @@ public class JugadorHockey extends Persona implements DesplazarseEnPistaConPalo 
         } else {
             return nombre + " es el portero y no se desplaza más allá de media pista.";
         }
+    }
+
+    public void pasarDisco(JugadorHockey receptor) {
+        System.out.println(nombre + " pasa el disco a " + receptor.getNombre());
     }
 }

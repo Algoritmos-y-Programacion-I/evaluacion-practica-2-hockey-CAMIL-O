@@ -50,7 +50,7 @@ public class Executable {
 
 						break;
 					case 2:
-
+                        precargarInfo(); 
 						break;
 					case 3:
 
@@ -82,5 +82,13 @@ public class Executable {
         mainApp.run(flag);
 
     }
+
+    public void precargarInfo(){
+        controladora.crearObjetos();
+        System.out.println("Objetos creados");
+
+    }
+
+    
 
 }
